@@ -1,19 +1,22 @@
 {
-  "extends": "./tsconfig.base.json",
-  "compileOnSave": false,
-  "files": [],
-  "references": [
-    {
-      "path": "./apps/vendor/vendor-api-e2e"
-    },
-    {
-      "path": "./apps/vendor/vendor-api"
-    },
-    {
-      "path": "./libs/vendor/api/users"
-    },
-    {
-      "path": "./libs/vendor/api/shared"
-    }
-  ]
+	"extends": "./tsconfig.base.json",
+	"compileOnSave": false,
+	"files": [],
+	"references": [
+		{
+			"path": "./apps/vendor/vendor-api-e2e"
+		},
+		{
+			"path": "./apps/vendor/vendor-api"
+		},
+		{
+			"path": "./libs/vendor/api/users"
+		},
+		{
+			"path": "./libs/vendor/api/shared"
+		},
+		{
+			"path": "./libs/vendor/api/products"
+		}
+	]
 }
