@@ -1,0 +1,20 @@
+{
+  "name": "vendor-api-users",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/vendor/api/users/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/vendor/api/users",
+        "tsConfig": "libs/vendor/api/users/tsconfig.lib.json",
+        "packageJson": "libs/vendor/api/users/package.json",
+        "main": "libs/vendor/api/users/src/index.ts",
+        "assets": ["libs/vendor/api/users/*.md"]
+      }
+    }
+  }
+}
