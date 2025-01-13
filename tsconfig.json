@@ -16,6 +16,9 @@
 			"path": "./libs/vendor/api/shared"
 		},
 		{
+			"path": "./apps/docs"
+		},
+		{
 			"path": "./libs/vendor/api/products"
 		}
 	]
