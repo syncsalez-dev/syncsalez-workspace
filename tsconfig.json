@@ -17,6 +17,24 @@
 		},
 		{
 			"path": "./libs/vendor/api/products"
+		},
+		{
+			"path": "./libs/shared/utils"
+		},
+		{
+			"path": "./libs/shared/models"
+		},
+		{
+			"path": "./libs/shared/services"
+		},
+		{
+			"path": "./libs/shared/packages"
+		},
+		{
+			"path": "./libs/shared/expo-ui"
+		},
+		{
+			"path": "./libs/shared/web-ui"
 		}
 	]
 }

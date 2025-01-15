@@ -20,39 +20,14 @@
 		"sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
 	},
 	"nxCloudId": "6784ea4df996972cd4a976ae",
-	"plugins": [
-		{
-			"plugin": "@nx/js/typescript",
-			"options": {
-				"typecheck": {
-					"targetName": "typecheck"
-				},
-				"build": {
-					"targetName": "build",
-					"configName": "tsconfig.lib.json"
-				}
+	"plugins": ["@nx/js/typescript", "@nx/webpack/plugin", "@nx/eslint/plugin", "@nx/jest/plugin"],
+	"useInferencePlugins": false,
+	"useLegacyCache": true,
+	"generators": {
+		"@nx/react": {
+			"library": {
+				"unitTestRunner": "jest"
 			}
-		},
-		{
-			"plugin": "@nx/webpack/plugin",
-			"options": {
-				"buildTargetName": "build",
-				"serveTargetName": "serve",
-				"previewTargetName": "preview"
-			}
-		},
-		{
-			"plugin": "@nx/eslint/plugin",
-			"options": {
-				"targetName": "lint"
-			}
-		},
-		{
-			"plugin": "@nx/jest/plugin",
-			"options": {
-				"targetName": "test"
-			},
-			"exclude": ["apps/vendor/vendor-api-e2e/**/*"]
 		}
-	]
+	}
 }

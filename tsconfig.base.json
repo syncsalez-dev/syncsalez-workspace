@@ -29,6 +29,16 @@
 		"sourceMap": false,
 		"strict": true,
 		"target": "es2022",
-		"verbatimModuleSyntax": false
+		"verbatimModuleSyntax": false,
+		"baseUrl": ".",
+		"paths": {
+			"@syncsalez/vendor-shared": ["libs/vendor/api/shared/src/index.ts"],
+			"@syncsalez/shared_services": ["libs/shared/services"],
+			"@syncsalez/shared_models": ["libs/shared/models"],
+			"@syncsalez/shared_utils": ["libs/shared/utils"],
+			"@syncsalez/shared_expo-ui": ["libs/shared/expo-ui"],
+			"@syncsalez/shared_web-ui": ["libs/shared/web-ui"],
+			"@syncsalez/shared_packages": ["libs/shared/packages"]
+		}
 	}
 }
