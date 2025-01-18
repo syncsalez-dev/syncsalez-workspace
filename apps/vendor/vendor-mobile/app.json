@@ -1,0 +1,41 @@
+{
+	"expo": {
+		"name": "VendorMobile",
+		"slug": "vendor-mobile",
+		"platform": ["ios", "android"],
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"doctor": {
+			"reactNativeDirectoryCheck": {
+				"listUnknownPackages": false
+			}
+		},
+		"splash": {
+			"image": "./assets/splash.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"updates": {
+			"fallbackToCacheTimeout": 0
+		},
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"newArchEnabled": false,
+			"supportsTablet": true
+		},
+		"android": {
+			"newArchEnabled": false,
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/adaptive-icon.png",
+				"backgroundColor": "#FFFFFF"
+			},
+			"package": "com.anonymous.vendormobile"
+		},
+		"web": {
+			"favicon": "./assets/favicon.png",
+			"bundler": "metro"
+		},
+		"plugins": []
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"extends": "../../../tsconfig.base.json",
+	"compilerOptions": {
+		"outDir": "out-tsc/vendor-mobile",
+		"types": ["node", "react"], // Include React types for JSX support
+		"rootDir": "src", // Root directory for source files
+		"jsx": "react-jsx", // JSX runtime for React 17+
+		"module": "esnext", // ESNext module for Metro compatibility
+		"moduleResolution": "bundler", // Use bundler-based resolution (Metro)
+		"noUnusedLocals": false, // Allow unused locals during development
+		"tsBuildInfoFile": "out-tsc/vendor-mobile/tsconfig.app.tsbuildinfo" // TS build info cache
+	},
+	"files": [
+		"../../../node_modules/@nx/expo/typings/svg.d.ts" // Custom typings for .svg imports
+	],
+	"exclude": [
+		"out-tsc",
+		"dist",
+		"**/*.test.ts",
+		"**/*.spec.ts",
+		"**/*.test.tsx",
+		"**/*.spec.tsx",
+		"**/*.test.js",
+		"**/*.spec.js",
+		"**/*.test.jsx",
+		"**/*.spec.jsx",
+		"src/test-setup.ts" // Exclude test setup file
+	],
+	"include": [
+		"**/*.ts",
+		"**/*.tsx",
+		"**/*.js",
+		"**/*.jsx"
+	]
+}

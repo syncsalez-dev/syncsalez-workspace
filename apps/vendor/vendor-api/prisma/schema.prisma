@@ -1,0 +1,7 @@
+model Task {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  isCompleted Boolean  @default(false)
+  createdAt   DateTime @default(now())
+}
