@@ -2,10 +2,11 @@
 	"expo": {
 		"name": "VendorMobile",
 		"slug": "vendor-mobile",
-		"platform": ["ios", "android"],
+		"platform": ["ios", "android", "web"],
 		"version": "1.0.0",
 		"orientation": "portrait",
 		"icon": "./assets/icon.png",
+		"jsEngine": "hermes",
 		"doctor": {
 			"reactNativeDirectoryCheck": {
 				"listUnknownPackages": false
@@ -21,11 +22,12 @@
 		},
 		"assetBundlePatterns": ["**/*"],
 		"ios": {
-			"newArchEnabled": false,
+			"jsEngine": "jsc",
+			"newArchEnabled": true,
 			"supportsTablet": true
 		},
 		"android": {
-			"newArchEnabled": false,
+			"newArchEnabled": true,
 			"adaptiveIcon": {
 				"foregroundImage": "./assets/adaptive-icon.png",
 				"backgroundColor": "#FFFFFF"
@@ -36,6 +38,21 @@
 			"favicon": "./assets/favicon.png",
 			"bundler": "metro"
 		},
-		"plugins": []
+		"plugins": [
+			[
+				"expo-sqlite",
+				{
+					"enableFTS": true,
+					"useSQLCipher": true,
+					"android": {
+						"enableFTS": false,
+						"useSQLCipher": false
+					},
+					"ios": {
+						"customBuildFlags": ["-DSQLITE_ENABLE_DBSTAT_VTAB=1 -DSQLITE_ENABLE_SNAPSHOT=1"]
+					}
+				}
+			]
+		]
 	}
 }

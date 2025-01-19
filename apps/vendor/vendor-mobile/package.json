@@ -106,8 +106,7 @@
     "ios": "expo run:ios"
   },
   "dependencies": {
-    "expo": "*",
-    "formdata-polyfill": "*",
+    "@expo/metro-config": "*",
     "@nx/devkit": "*",
     "@nx/eslint": "*",
     "@nx/jest": "*",
@@ -115,19 +114,24 @@
     "@nx/react": "*",
     "@nx/web": "*",
     "@nx/webpack": "*",
+    "@react-navigation/native": "*",
+    "@react-navigation/stack": "*",
+    "@testing-library/react-native": "*",
+    "axios": "*",
     "enhanced-resolve": "*",
+    "expo": "*",
+    "expo-sqlite": "~15.0.6",
+    "formdata-polyfill": "*",
     "metro-config": "*",
     "metro-resolver": "*",
     "node-fetch": "*",
     "picocolors": "*",
-    "tsconfig-paths": "*",
-    "tslib": "*",
-    "@expo/metro-config": "*",
-    "react-native-svg-transformer": "*",
-    "react": "*",
-    "@testing-library/react-native": "*",
+    "react": "18.3.1",
     "react-native": "*",
-    "react-native-svg": "*"
+    "react-native-svg": "15.8.0",
+    "react-native-svg-transformer": "*",
+    "tsconfig-paths": "*",
+    "tslib": "*"
   },
   "devDependencies": {}
 }
