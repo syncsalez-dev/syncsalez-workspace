@@ -1,3 +1,6 @@
 node_modules
 # Keep environment variables out of version control
 .env
+apps/vendor/vendor-api/node_modules
+apps/vendor/vendor-api/dist
+apps/vendor/vendor-api/.env
