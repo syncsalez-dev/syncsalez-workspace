@@ -39,8 +39,9 @@
 		"metro-resolver": "*",
 		"next": "14.2.16",
 		"node-fetch": "*",
+		"pg": "^8.13.1",
 		"picocolors": "*",
-		"react": "18.3.1",
+		"react": "~18.3.1",
 		"react-dom": "~18.3.1",
 		"react-native": "^0.76.6",
 		"react-native-gesture-handler": "^2.22.0",
@@ -53,6 +54,7 @@
 		"socket.io-client": "^4.8.1",
 		"tsconfig-paths": "*",
 		"tslib": "*",
+		"winston": "^3.17.0",
 		"zod": "^3.24.1"
 	},
 	"devDependencies": {
@@ -115,5 +117,6 @@
 	"description": "SyncSalez-Application",
 	"main": "index.js",
 	"repository": "https://github.com/syncsalez-dev/syncsalez-workspace.git",
-	"author": "olamide-thinker <olamide.thinker@gmail.com>"
+	"author": "olamide-thinker <olamide.thinker@gmail.com>",
+	"packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
