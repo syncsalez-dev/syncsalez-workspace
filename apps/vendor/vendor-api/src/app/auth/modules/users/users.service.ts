@@ -12,4 +12,28 @@ export class UserService {
         });
         return user;
     }
+
+    async registerUser(data: { email: string; password: string; name: string }) {
+        const user = await this.prisma.user.create({
+            data,
+        });
+        return user;
+    }
+
+    async loginUser(data: { email: string; password: string }) {
+        const user = await this.prisma.user.findFirst({
+            where: {
+                email: data.email,
+                password: data.password,
+            },
+        });
+        if (!user) {
+            throw new Error('User not found');
+        }
+        return user;
+    }
+
+    
+
+
 }

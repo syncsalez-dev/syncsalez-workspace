@@ -44,6 +44,7 @@
 				],
 				"options": {
 					"buildTarget": "vendor-api:build",
+					"watch": true,
 					"runBuildTargetDependencies": false
 				},
 				"configurations": {

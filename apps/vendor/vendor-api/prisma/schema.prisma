@@ -22,3 +22,23 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
+model Product {
+  id        String   @id @default(cuid())
+  name      String
+  quantity  Int
+  price     Float
+  updatedAt DateTime @updatedAt
+
+  Sale Sale[]
+}
+
+model Sale {
+  id        String   @id @default(cuid())
+  productId String
+  quantity  Int
+  total     Float
+  timestamp DateTime @default(now())
+
+  Product   Product  @relation(fields: [productId], references: [id])
+}
