@@ -131,7 +131,8 @@
     "react-native-svg": "15.8.0",
     "react-native-svg-transformer": "*",
     "tsconfig-paths": "*",
-    "tslib": "*"
+    "tslib": "*",
+    "@react-native-community/netinfo": "*"
   },
   "devDependencies": {}
 }
